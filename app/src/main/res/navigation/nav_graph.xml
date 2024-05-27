@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homsSecreen">
+
+    <fragment
+        android:id="@+id/homsSecreen"
+        android:name="com.example.task.presentation.home_screen.HomeScreenFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homsSecreen_to_allUser"
+            app:destination="@id/allUser" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/allUser"
+        android:name="com.example.task.presentation.all_user_screen.AllUserFragment"
+        android:label="All User"
+        tools:layout="@layout/fragment_all_user" />
+</navigation>
